@@ -1,7 +1,6 @@
 {
-  "homepage": "https://adarsh180.github.io/movie-react-app",
-  "name": "movies",
-  "version": "0.1.0",
+"homepage": "https://AkashJaiswal15.github.io/Movie-review-Website-",  "name": "movie-review-app",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
