@@ -1,7 +1,16 @@
 .trending {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 24px 12px;
+  margin-top: 24px;
+  min-height: 60vh;
+  animation: fadeIn 0.8s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
 }
 
 .bottom {
@@ -9,34 +18,38 @@
 }
 
 .topSpacing {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .pageTitle {
   display: flex;
   justify-content: center;
-  font-family: "Roboto";
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 2.5rem;
   width: 100%;
-  color: rgb(161, 169, 48);
+  color: #fccb06;
   padding-top: 30px;
   font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  margin-bottom: 10px;
+  animation: fadeIn 1s;
 }
 
 @media (max-width: 1000px) {
   .pageTitle {
-    font-size: 6.7vw;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 630px) {
   .pageTitle {
-    font-size: 7vw;
-    padding-top: 25px;
+    font-size: 1.3rem;
+    padding-top: 18px;
     font-weight: bold;
   }
   .topSpacing {
-    padding-top: 20px;
+    padding-top: 18px;
   }
 }

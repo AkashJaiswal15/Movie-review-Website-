@@ -1,21 +1,24 @@
 .media {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  padding: 5px;
-  margin: 5px 0px;
-  border-radius: 10px;
-  background-color: #07121c;
+  width: 220px;
+  padding: 12px;
+  margin: 12px 8px;
+  border-radius: 18px;
+  background: rgba(20, 24, 31, 0.95);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(252,203,6,0.08);
   position: relative;
-  font-family: "Montserrat";
-  bottom: 20;
+  font-family: 'Montserrat', Arial, sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+  cursor: pointer;
 }
 
 .media:hover {
-  background-color: gainsboro;
-  color: black;
-  border: 2px black solid;
-  box-sizing: border-box;
+  background: #fccb06;
+  color: #232526;
+  transform: scale(1.04) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(252,203,6,0.18), 0 2px 8px rgba(0,0,0,0.12);
+  border: none;
 }
 
 /*.media:hover .details {
@@ -25,19 +28,38 @@
 
 @media (max-width: 550px) {
   .media {
-    max-width: 47%;
+    max-width: 95%;
+    width: 100%;
+    margin: 10px auto;
+  }
+  .poster {
+    height: 220px;
   }
 }
 
 .poster {
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  margin-bottom: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 320px;
+  background: #232526;
 }
 
 .title {
   text-align: center;
   width: 100%;
-  font-size: 17px;
-  padding: 5px 0px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 8px 0 2px 0;
+  letter-spacing: 0.5px;
+  color: #fccb06;
+  transition: color 0.2s;
+}
+
+.media:hover .title {
+  color: #232526;
 }
 
 .title-1 {

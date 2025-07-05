@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 .app {
   min-height: 100vh;
-  background-color: black;
-  color:rgba(252, 243, 243, 0.742);
-  padding-bottom: 20px;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #f5f6fa;
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+  padding-bottom: 40px;
+  transition: background 0.5s;
 }
 
 .buttom {
   padding-top: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #232526;
+}
+::-webkit-scrollbar-thumb {
+  background: #fccb06;
+  border-radius: 4px;
 }
